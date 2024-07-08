@@ -1,0 +1,635 @@
+/*........................................................... General */
+
+@font-face {
+
+    /* Imports non-google font */
+    font-family: "Kalligraphia";
+    src: url("../fonts/Kalligraphia-D-OT_25803.ttf");
+
+}
+
+/* Basic settings for main text font */
+
+body {
+
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+}
+
+/* Projects default settings for hyper-links */
+
+a {
+
+    color: white;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+
+}
+
+/* Same as previous except for hover settings */
+
+a:hover {
+
+    color: white;
+}
+
+/*............................................................  Containers */
+
+/* base code from whiskey drop module, altered to fit project*/
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* base code from whiskey drop module, altered to fit project*/
+
+.callout-container {
+    height: 100vh;
+    background-image: url('../images/collage.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* padding added to top and bottom of sections*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+}
+
+/* background image settings */
+
+.gigs-container {
+    background-image: url("../images/live.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* base code from whiskey drop module, altered to fit project*/
+
+.gig-opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* background image settings for video section */
+
+.video-container {
+    background-image: url("../images/video-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* background color setting */
+
+.gallery-container {
+    background-image: url("../images/monkees.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* background color setting */
+
+.social-container {
+    background-color: white;
+}
+
+/*............................................................  Logo */
+
+/* alterations to the bootstrap class img-responsive*/
+
+.img-logo {
+    margin: 0 auto;
+    padding-top: 30px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/*............................................................  Navbar Section */
+
+/* alterations made to Bootstraps navbar class for project specific navbar set up*/
+
+.navbar {
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    border: 0;
+}
+
+/* removes border from expanded menu button in mobile version of navbar */
+
+.navbar-default .navbar-collapse {
+
+    border-color: black;
+    width: 100%;
+}
+
+/* When expand menu button (mobile only)is selected its background colors remains transparent */
+
+.navbar-default .navbar-toggle:hover .navbar-default .navbar-toggle:visited .navbar-default .navbar-toggle:active .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+/* colors the bars in the expand menu button to white */
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/* when a link item is interacted with it remains white */
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+/* basic settings for link items */
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 20px;
+}
+
+/* sets font type for link items in mobile nav */
+
+.navbar a {
+    font-family: "Kalligraphia", sans-serif;
+}
+
+/*alterations made to Bootstraps navbar-brand class for project specific navbar set up on mobile */
+
+.navbar-brand {
+    font-size: 25px;
+    padding-top: 18px;
+}
+
+/*Sets background color to transparent*/
+
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+/*............................................................  Jumbotron Section */
+
+/* alterations made to bootstraps jumbotron class */
+
+.jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+/* font settings for the music service links in jumbotron */
+
+.lead.music-service {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/* font settings for the music service links in jumbotron upon hover */
+
+.lead.music-service:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* settings for the new album details in jumbotron */
+
+.lead.music-text {
+    font-style: italic;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin: 25px 0;
+}
+
+/*............................................................  Block dividers */
+
+/* block divider borrowed from whiskey drop module, sets divider dimensions relies on either black or white versions for color */
+
+.block-divider {
+    width: 35px;
+    height: 5px;
+    border: 0;
+}
+
+/*Sets background color */
+
+.block-divider--white {
+    background-color: white;
+}
+
+/*Sets background color */
+
+.block-divider--black {
+    background-color: black;
+}
+
+/*........................................................... Section Titles */
+
+/* colors text white */
+
+.page-header .white-title {
+    color: white;
+}
+
+/* sets font for section titles */
+
+.text-title {
+    font-family: "Kalligraphia", sans-serif;
+}
+
+/* basic font settings */
+
+.social-title {
+    color: black;
+    font-weight: 300;
+}
+
+/* ............................................................ Page Headers */
+
+/* extra styles added to bootstrap page-header class */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+/* removed margin-top */
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* added 25 px of space at the bottom */
+
+.band .page-header {
+    margin-bottom: 25px;
+}
+
+/* added 25 px of space at the bottom */
+
+.gigs .page-header {
+    margin-bottom: 25px;
+}
+
+/* added 25 px of space at the bottom */
+
+.music .page-header {
+    margin-bottom: 25px;
+}
+
+/* added 25 px of space at the bottom */
+
+.video .page-header {
+    margin-bottom: 25px;
+}
+
+/*............................................................  Section Text */
+
+/* aligns text in center */
+
+.section-text p {
+    text-align: center;
+}
+
+/*............................................................ Band Section */
+
+/* removes border on the left */
+
+blockquote {
+    border-left: 0;
+}
+
+/* puts 25px of space at the bottom */
+
+.media-body {
+    padding-bottom: 25px;
+}
+
+/* sets font size */
+
+.media-body p {
+    font-size: 14px;
+}
+
+/*............................................................  Gigs Section */
+
+/* sets color of text to white */
+
+.gigs-text {
+    color: white;
+}
+
+/* sets color of text inside table to white */
+
+body table {
+    color: white;
+}
+
+/* styles sold out! to look like the other live links */
+
+.dead-link {
+    color: white;
+    text-decoration: none;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.label {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+    
+}
+
+/* top line of gigs table positioning */ 
+
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+/*............................................................  Buttons */
+
+/* extra styles added to bootstrap button class */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+    background-color: #31b0d5;
+    color: white;
+}
+
+/* ........................................................ Booking Modal */
+
+/* To center vertically */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/*........................................................ Music Section */
+
+/* centers text sets width */
+
+p .section-text {
+    text-align: center;
+    width: 30em;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+
+/*......................................................... Gallery Section */
+
+/*For uniform sizing */
+
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    height: 400px !important;
+
+
+}
+
+/* colors text white */
+
+#gallery-text {
+    color: white;
+}
+
+/*............................................................ Video Section*/
+
+/* colors text white */
+
+#video-text {
+    color: white;
+}
+
+/* makes video centered and responsive */
+
+video {
+    height: auto !important;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+/*............................................................ Social Footer */
+
+/* basic font settings */
+
+.lead.social-text {
+    font-family: "Kalligraphia", sans-serif;
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+}
+
+/* basic font settings, positioning and removal of style, margin and padding from list */
+
+.social-list {
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* displays list horizontally instead of vertically */
+
+.social-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* colors font awesome social icons black */
+
+.fa {
+    color: black;
+}
+
+/* styles newsletter subscription */
+
+#signup.contact-form {
+    display: block;
+    font-size: 14px;
+    margin-top: 0em;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    padding-top: 25px;
+}
+
+/* styles back to top link */
+
+#back {
+    color: black;
+    text-decoration: underline;
+}
+
+/* sets border color */
+
+input .email-box {
+    border-color: black;
+}
+
+/*......................................................... MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    /*............................................................  Containers */
+    
+    /* base code from whiskey drop module, altered to fit project*/
+    
+    .callout-container {
+        height: 100vh;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /*............................................................  Logo */
+    
+    /* controls monkees logo img size */
+    
+    .img-responsive {
+        padding-top: 90px;
+
+
+    }
+
+    /*............................................................  Navbar Section */
+    
+    /*Changes navbar display type*/
+    
+    .navbar {
+        margin-bottom: 0;
+        position: absolute;
+        
+    }
+    
+    /*navbar display settings*/
+    
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top
+    }
+    
+    /* aligns navbar items in the center */
+    
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    
+    /* styles navbar items spacing*/
+    
+    .navbar-nav>li {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    
+    /* removes background color */
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    /* font styles and transition settings for navbar items*/
+    
+    .navbar-default .navbar-nav>li>a {
+        transition: text-decoration 0.5s ease-in-out;
+        font-size: 35px;
+        font-family: "Kalligraphia", sans-serif;
+        color: white;
+    }
+    
+    /* when navbar items are interacted with they are underlined */
+    
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:active {
+        text-decoration: underline;
+    }
+
+    /*............................................................  Jumbotron Section*/
+    
+    /* Basic font settings */
+    
+    .lead.music-text {
+        font-style: italic;
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        color: white;
+        margin: 25px 0;
+    }
+
+    /*............................................................  Video Section */
+    
+    /*sets video width*/
+    
+    video {
+        width: 60%;
+
+    }
+}
