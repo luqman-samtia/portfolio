@@ -8144,7 +8144,8 @@ body {
   line-height: 1.8;
   font-weight: 400;
   font-style: normal;
-  color: #999999; }
+  color: #1e2749; 
+}
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -8393,7 +8394,8 @@ h1, h2, h3, h4, h5,
   letter-spacing: 5px;
   font-size: 16px;
   z-index: 1;
-  color: rgba(0, 0, 0, 0.3); }
+  color: rgba(0, 0, 0, 0.3);
+ }
   @media (max-width: 1199.98px) {
     .hero h3.vr {
       opacity: 0;
@@ -8453,6 +8455,7 @@ h1, h2, h3, h4, h5,
         left: 0;
         right: 0;
         background: #000000;
+        /* background: #000000; */
         opacity: 0; }
       .owl-carousel.home-slider .slider-item .slider-text {
         height: 750px;
@@ -8471,6 +8474,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay, .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay-1 {
             position: absolute;
             left: -7%;
+            /* background: #fff; */
             background: #fff;
             width: 150px;
             height: 50%;
